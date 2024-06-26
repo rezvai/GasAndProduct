@@ -50,43 +50,43 @@ WHERE "Producing Formation" = ''; -- Подсчет пустых значени�
 
 SELECT count("Active Oil Wells") 
 FROM oil_and_gas_summary_production_data 
-WHERE "Active Oil Wells" = NULL; -- Подсчет пустых значений в столбце 
+WHERE "Active Oil Wells" IS NULL; -- Подсчет пустых значений в столбце 
 
 SELECT count("Inactive Oil Wells") 
 FROM oil_and_gas_summary_production_data 
-WHERE "Inactive Oil Wells" = NULL; -- Подсчет пустых значений в столбце 
+WHERE "Inactive Oil Wells" IS NULL; -- Подсчет пустых значений в столбце 
 
 SELECT count("Active Gas Wells") 
 FROM oil_and_gas_summary_production_data 
-WHERE "Active Gas Wells" = NULL; -- Подсчет пустых значений в столбце 
+WHERE "Active Gas Wells" IS NULL; -- Подсчет пустых значений в столбце 
 
 SELECT count("Inactive Gas Wells") 
 FROM oil_and_gas_summary_production_data 
-WHERE "Inactive Gas Wells" = NULL; -- Подсчет пустых значений в столбце 
+WHERE "Inactive Gas Wells" IS NULL; -- Подсчет пустых значений в столбце 
 
 SELECT count("Injection Wells") 
 FROM oil_and_gas_summary_production_data 
-WHERE "Injection Wells" = NULL; -- Подсчет пустых значений в столбце 
+WHERE "Injection Wells" IS NULL; -- Подсчет пустых значений в столбце 
 
 SELECT count("Disposal Wells") 
 FROM oil_and_gas_summary_production_data 
-WHERE "Disposal Wells" = NULL; -- Подсчет пустых значений в столбце 
+WHERE "Disposal Wells" IS NULL; -- Подсчет пустых значений в столбце 
 
 SELECT count("Oil Produced, bbl") 
 FROM oil_and_gas_summary_production_data 
-WHERE "Oil Produced, bbl" = NULL; -- Подсчет пустых значений в столбце 
+WHERE "Oil Produced, bbl" IS NULL; -- Подсчет пустых значений в столбце 
 
 SELECT count("Gas Produced, Mcf") 
 FROM oil_and_gas_summary_production_data 
-WHERE "Gas Produced, Mcf" = NULL; -- Подсчет пустых значений в столбце 
+WHERE "Gas Produced, Mcf" IS NULL; -- Подсчет пустых значений в столбце 
 
 SELECT count("Water produced, bbl") 
 FROM oil_and_gas_summary_production_data 
-WHERE "Water produced, bbl" = NULL; -- Подсчет пустых значений в столбце 
+WHERE "Water produced, bbl" IS NULL; -- Подсчет пустых значений в столбце 
 
 SELECT count("Taxable Gas, Mcf") 
 FROM oil_and_gas_summary_production_data 
-WHERE "Taxable Gas, Mcf" = NULL; -- Подсчет пустых значений в столбце 
+WHERE "Taxable Gas, Mcf" IS NULL; -- Подсчет пустых значений в столбце 
 
 DELETE FROM oil_and_gas_summary_production_data WHERE "County" = ''; -- Удаление пропусков
 
